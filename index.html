@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Covid Survey</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald&family=Permanent+Marker&family=Special+Elite&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="heading">Covid Survey Form</h1>
+        <h4 class="heading01"><cite>Happy to see you here!<br>Thank you for your availability.</cite></h4>
+        <p class="heading1">Please spare your precious minutes to fill this form.</p>
+    </header>
+    <hr>
+    <main>
+        <form id="form">
+            <br>
+            <fieldset class="fieldset">
+                <legend class="legend">Personal Details</legend>
+                <div class="pd">
+                    <label for="fname">First Name: </label>
+                    <input type="text" id="fname" name="fname" value='' maxlength="10">
+                    <br><br>
+                    <label for="lname">Last Name: </label>
+                    <input type='text' id='lname' name='lname' value='' maxlength="20">
+                    <br><br>
+                    <label for="dob">What is your Date of Birth?</label>
+                    <input type='date' id='dob' name='dob' value=''>
+                    <br><br>
+                    <label>What is your Gender?</label><br>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label><br>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label><br>
+                    <input type="radio" id="other" name="gender" value="other">
+                    <label for="other">Other</label>
+                    <br><br>
+                    <label for="blood">Blood Group: </label>
+                    <select name="blood" id="blood">
+                        <option value="Select">Select</option>
+                        <option value="A+">A+</option>
+                        <option value="A-">A-</option>
+                        <option value="B+">B+</option>
+                        <option value="B-">B-</option>
+                        <option value="O+">O+</option>
+                        <option value="O-">O-</option>
+                        <option value="AB+">AB+</option>
+                        <option value="AB-">AB-</option>
+                    </select>
+                    <br><br>
+                    <label for="address1">Address Line 1: </label>
+                    <input type='text' id='address1' name='address1' value=''>
+                    <br><br>
+                    <label for="address2">Address Line 2: </label>
+                    <input type='text' id='address2' name='address2' value=''>
+                    <br><br>
+                    <label for="city">City: </label>
+                    <input type='text' id='city' name='city' value=''>
+                    <br><br>
+                    <label for="state">State: </label>
+                    <select name='state' id="state">
+                        <option value="Select">Select</option>
+                        <option value="Andhra Pradesh">Andhra Pradesh</option>
+                        <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                        <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                        <option value="Assam">Assam</option>
+                        <option value="Bihar">Bihar</option>
+                        <option value="Chandigarh">Chandigarh</option>
+                        <option value="Chhattisgarh">Chhattisgarh</option>
+                        <option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
+                        <option value="Daman and Diu">Daman and Diu</option>
+                        <option value="Delhi">Delhi</option>
+                        <option value="Lakshadweep">Lakshadweep</option>
+                        <option value="Puducherry">Puducherry</option>
+                        <option value="Goa">Goa</option>
+                        <option value="Gujarat">Gujarat</option>
+                        <option value="Haryana">Haryana</option>
+                        <option value="Himachal Pradesh">Himachal Pradesh</option>
+                        <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                        <option value="Jharkhand">Jharkhand</option>
+                        <option value="Karnataka">Karnataka</option>
+                        <option value="Kerala">Kerala</option>
+                        <option value="Madhya Pradesh">Madhya Pradesh</option>
+                        <option value="Maharashtra">Maharashtra</option>
+                        <option value="Manipur">Manipur</option>
+                        <option value="Meghalaya">Meghalaya</option>
+                        <option value="Mizoram">Mizoram</option>
+                        <option value="Nagaland">Nagaland</option>
+                        <option value="Odisha">Odisha</option>
+                        <option value="Punjab">Punjab</option>
+                        <option value="Rajasthan">Rajasthan</option>
+                        <option value="Sikkim">Sikkim</option>
+                        <option value="Tamil Nadu">Tamil Nadu</option>
+                        <option value="Telangana">Telangana</option>
+                        <option value="Tripura">Tripura</option>
+                        <option value="Uttar Pradesh">Uttar Pradesh</option>
+                        <option value="Uttarakhand">Uttarakhand</option>
+                        <option value="West Bengal">West Bengal</option>
+                    </select>
+                    <br><br>
+                    <label for="postcode">Postal Code: </label>
+                    <input type='text' id='postcode' name='postcode' value=''>
+                    <br><br>
+                    <label for="email">Email Address: </label>
+                    <input type='Email' id='email' name='email' value=''>
+                    <br><br>
+                    <label for="phone">Contact Number: </label>
+                    <input type='tel' id='phone' name='phone' pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                        placeholder="012-345-6789"><br>
+                    <small>Format: 012-345-6789</small>
+                    <br>
+                </div>
+            </fieldset>
+            <fieldset class="fieldset">
+                <legend class="legend">Health Details</legend>
+                <div class="pd">
+                    <label for="symptom">Do you Experience any of the below?</label>
+                    <table>
+                        <tr>
+                            <th>Symptom</th>
+                            <th>NO</th>
+                            <th>SLIGHT</th>
+                            <th>MEDIUM</th>
+                            <th>HEAVY</th>
+                        </tr>
+                        <tr>
+                            <td>Cold</td>
+                            <td>
+                                <input type="radio" id="symptom" name="cold" value="No">
+                            </td>
+                            <td>
+                                <input type="radio" id="symptom" name="cold" value="slight">
+                            </td>
+                            <td>
+                                <input type="radio" id="symptom" name="cold" value="medium">
+                            </td>
+                            <td>
+                                <input type="radio" id="symptom" name="cold" value="heavy">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Fever</td>
+                            <td>
+                                <input type="radio" id="symptom" name="fever" value="No">
+                            </td>
+                            <td>
+                                <input type="radio" id="symptom" name="fever" value="slight">
+                            </td>
+                            <td>
+                                <input type="radio" id="symptom" name="fever" value="medium">
+                            </td>
+                            <td>
+                                <input type="radio" id="symptom" name="fever" value="heavy">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Cough</td>
+                            <td>
+                                <input type="radio" id="symptom" name="cough" value="No">
+                            </td>
+                            <td>
+                                <input type="radio" id="symptom" name="cough" value="slight">
+                            </td>
+                            <td>
+                                <input type="radio" id="symptom" name="cough" value="medium">
+                            </td>
+                            <td>
+                                <input type="radio" id="symptom" name="cough" value="heavy">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Shortness of breath</td>
+                            <td>
+                                <input type="radio" id="symptom" name="shortnessofbreath" value="No">
+                            </td>
+                            <td>
+                                <input type="radio" id="symptom" name="shortnessofbreath" value="slight">
+                            </td>
+                            <td>
+                                <input type="radio" id="symptom" name="shortnessofbreath" value="medium">
+                            </td>
+                            <td>
+                                <input type="radio" id="symptom" name="shortnessofbreath" value="heavy">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Headache</td>
+                            <td>
+                                <input type="radio" id="symptom" name="headache" value="No">
+                            </td>
+                            <td>
+                                <input type="radio" id="symptom" name="headache" value="slight">
+                            </td>
+                            <td>
+                                <input type="radio" id="symptom" name="headache" value="medium">
+                            </td>
+                            <td>
+                                <input type="radio" id="symptom" name="headache" value="heavy">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Muscle Pain</td>
+                            <td>
+                                <input type="radio" id="symptom" name="musclepain" value="No">
+                            </td>
+                            <td>
+                                <input type="radio" id="symptom" name="musclepain" value="slight">
+                            </td>
+                            <td>
+                                <input type="radio" id="symptom" name="musclepain" value="medium">
+                            </td>
+                            <td>
+                                <input type="radio" id="symptom" name="musclepain" value="heavy">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Sore Throat</td>
+                            <td>
+                                <input type="radio" id="symptom" name="sorethroat" value="No">
+                            </td>
+                            <td>
+                                <input type="radio" id="symptom" name="sorethroat" value="slight">
+                            </td>
+                            <td>
+                                <input type="radio" id="symptom" name="sorethroat" value="medium">
+                            </td>
+                            <td>
+                                <input type="radio" id="symptom" name="sorethroat" value="heavy">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Diarrhea</td>
+                            <td>
+                                <input type="radio" id="symptom" name="diarrheaa" value="No">
+                            </td>
+                            <td>
+                                <input type="radio" id="symptom" name="diarrheaa" value="slight">
+                            </td>
+                            <td>
+                                <input type="radio" id="symptom" name="diarrheaa" value="medium">
+                            </td>
+                            <td>
+                                <input type="radio" id="symptom" name="diarrheaa" value="heavy">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Olfactory Disorder<br>(Anosmia)</td>
+                            <td>
+                                <input type="radio" id="symptom" name="anosmia" value="No">
+                            </td>
+                            <td>
+                                <input type="radio" id="symptom" name="anosmia" value="slight">
+                            </td>
+                            <td>
+                                <input type="radio" id="symptom" name="anosmia" value="medium">
+                            </td>
+                            <td>
+                                <input type="radio" id="symptom" name="anosmia" value="heavy">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Taste Disorder</td>
+                            <td>
+                                <input type="radio" id="symptom" name="tastedisoreder" value="No">
+                            </td>
+                            <td>
+                                <input type="radio" id="symptom" name="tastedisoreder" value="slight">
+                            </td>
+                            <td>
+                                <input type="radio" id="symptom" name="tastedisoreder" value="medium">
+                            </td>
+                            <td>
+                                <input type="radio" id="symptom" name="tastedisoreder" value="heavy">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Exhaustion</td>
+                            <td>
+                                <input type="radio" id="symptom" name="exhaustion" value="No">
+                            </td>
+                            <td>
+                                <input type="radio" id="symptom" name="exhaustion" value="slight">
+                            </td>
+                            <td>
+                                <input type="radio" id="symptom" name="exhaustion" value="medium">
+                            </td>
+                            <td>
+                                <input type="radio" id="symptom" name="exhaustion" value="heavy">
+                            </td>
+                        </tr>
+                    </table>
+                    <br><br>
+                    <label>Do you Experience any other difficulties?</label><br><br>
+                    <textarea name="otherdifficulties" rows="5"
+                        cols="20">If, any difficulties please mention.</textarea>
+                    <br><br>
+                    <label for="disease">Do you suffer any of the below diseases?</label><br><br>
+                    <input type="checkbox" name="Disease" id="disease" value="cardiodisease"> Cardiovascular Disease<br>
+                    <input type="checkbox" name="Disease" id="disease" value="diabetes"> Diabetes<br>
+                    <input type="checkbox" name="Disease" id="disease" value="asthama"> Asthama<br>
+                    <input type="checkbox" name="Disease" id="disease" value="bronchitis"> Bronchitis<br>
+                    <input type="checkbox" name="cancer" id="disease" value="cancer"> Cancer<br>
+                    <input type="checkbox" name="Disease" id="disease" value="other"> Other
+                    <input type="text" name="Disease" id="disease" placeholder="Any other">
+                    <br><br>
+                    <label for="country">Do you have Travel History to any of these countries?</label><br>
+                    <input type="checkbox" name="country" id="country" value="china"> CHINA<br>
+                    <input type="checkbox" name="country" id="country" value="italy"> ITALY<br>
+                    <input type="checkbox" name="country" id="country" value="spain"> SPAIN<br>
+                    <input type="checkbox" name="country" id="country" value="france"> FRANCE<br>
+                    <input type="checkbox" name="country" id="country" value="us"> United States<br>
+                    <input type="checkbox" name="country" id="country" value="uk"> United Kingdom<br>
+                    <input type="checkbox" name="country" id="country" value="saudi"> Saudi Arabia<br>
+                    <input type="checkbox" name="country" id="country" value="other"> OTHER
+                    <input type="text" name="country" id="country" placeholder="Any other.">
+                    <br><br>
+                    <label for="gathering">Approximately, how many people have you come in contact with in past 15
+                        days?</label><br>
+                    <input type="radio" name="gathering" id="gathering" value="1-5"> 1-5<br>
+                    <input type="radio" name="gathering" id="gathering" value="5-10"> 5-10<br>
+                    <input type="radio" name="gathering" id="gathering" value="10-20"> 10-20<br>
+                    <input type="radio" name="gathering" id="gathering" value="20-50"> 20-50<br>
+                    <input type="radio" name="gathering" id="gathering" value="More than 50"> More than 50
+                    <br><br>
+                    <label for="history">Have you already shared your medical history with government
+                        authorities?</label><br>
+                    <select name="history" id="history">
+                        <option value="Select">Select</option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                    <br><br>
+                    <label for="seniorcitizen">How many senior citizens do you have at home?</label><br>
+                    <input type="radio" name="seniorcitizen" id="seniorcitizen" value="0"> 0<br>
+                    <input type="radio" name="seniorcitizen" id="seniorcitizen" value="1"> 1<br>
+                    <input type="radio" name="seniorcitizen" id="seniorcitizen" value="2"> 2<br>
+                    <input type="radio" name="seniorcitizen" id="seniorcitizen" value="3 or More"> 3 or More
+                    <br><br>
+                    <label for="check">Have you been tested at Hospital/Airport/Railway Station?</label><br>
+                    <input type="radio" name="checking" id="check" value="Yes"> Yes<br>
+                    <input type="radio" name="checking" id="check" value="No"> No
+                    <br><br>
+                    <label for="pregnancy">Are you pregnant? If yes, select the number of weeks.</label><br>
+                    <input type="checkbox" id="pregnancy" name="Pregnent" value="NA">NA<br>
+                    <input type="checkbox" id="pregnancy" name="Pregnent" value="4-12">4 - 12 weeks<br>
+                    <input type="checkbox" id="pregnancy" name="Pregnent" value="12-24">12 - 24 weeks<br>
+                    <input type="checkbox" id="pregnancy" name="Pregnent" value="More than 24">More than 24 weeks
+                    <br><br>
+                    <label for="smoke">Do you smoke?</label><br>
+                    <input type="radio" name="smoke" id="smoke" value="Yes"> Yes<br>
+                    <input type="radio" name="smoke" id="smoke" value="No"> No
+                    <br><br>
+                    <label for="drink">Do you drink alcohol?</label><br>
+                    <input type="radio" name="drink" id="drink" value="Yes"> Yes<br>
+                    <input type="radio" name="drink" id="drink" value="No"> No
+                    <br><br>
+                    <label for="work">Do you work in any of these high risk occupations?</label><br>
+                    <input type="radio" name="work" id="work" value="NA"> NA<br>
+                    <input type="radio" name="work" id="work" value="Healthcare"> Healthcare<br>
+                    <input type="radio" name="work" id="work" value="Assisted-living"> Assisted-living<br>
+                    <input type="radio" name="work" id="work" value="Military institution"> Military Institution<br>
+                    <input type="radio" name="work" id="work" value="Aged-care facility"> Aged-care Facility<br>
+                    <input type="radio" name="work" id="work" value="Other"> Other
+                    <input type="text" name="work" id="work" placeholder="Any other">
+                    <br><br>
+                </div>
+            </fieldset>
+            <center>
+                <button class="submit" type="reset" form="form" value="Reset">Reset</button>
+                <button class="submit" type="submit" form="form" value="Submit">Submit</button>
+            </center>
+            <br>
+        </form>
+    </main>
+    <hr>
+    <footer>
+        <p class="foot">Design and Developed By: <br><a href="https://github.com/codename-samy">codename-samy</a></p>
+    </footer>
+</body>
+
+</html>
